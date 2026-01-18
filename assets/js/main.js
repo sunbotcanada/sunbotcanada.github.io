@@ -1,5 +1,67 @@
 /* SunBot Robotics Official Website - Main JavaScript */
 
+// ===== Load Navigation Component =====
+async function loadNavigation() {
+    try {
+        const response = await fetch('assets/components/navbar.html');
+        if (!response.ok) {
+            throw new Error('Failed to load navigation');
+        }
+        const html = await response.text();
+        const navPlaceholder = document.getElementById('navbar-placeholder');
+        if (navPlaceholder) {
+            navPlaceholder.innerHTML = html;
+            
+            // 设置当前页面的 active 状态
+            updateActiveNav();
+            
+            // 重新初始化语言切换（因为导航栏是新加载的）
+            initLanguageToggle();
+            
+            // 重新初始化移动端菜单关闭功能
+            initMobileMenuClose();
+            
+            // 应用当前语言设置到新加载的导航栏
+            const savedLang = localStorage.getItem('preferredLang') || 'en';
+            updateLanguage(savedLang);
+        }
+    } catch (error) {
+        console.error('Error loading navigation:', error);
+    }
+}
+
+// 初始化语言切换功能
+function initLanguageToggle() {
+    document.querySelectorAll('.lang-toggle button').forEach(btn => {
+        // 移除旧的事件监听器（如果存在）
+        const newBtn = btn.cloneNode(true);
+        btn.parentNode.replaceChild(newBtn, btn);
+        
+        // 添加新的事件监听器
+        newBtn.addEventListener('click', () => {
+            const lang = newBtn.getAttribute('data-lang');
+            updateLanguage(lang);
+        });
+    });
+}
+
+// 初始化移动端菜单关闭功能
+function initMobileMenuClose() {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                }
+            }
+        });
+    });
+}
+
 // ===== Language Toggle =====
 let currentLang = 'en';
 
@@ -94,17 +156,18 @@ function updateLanguage(lang) {
 }
 
 // Initialize language
-document.addEventListener('DOMContentLoaded', () => {
+function initLanguage() {
     const savedLang = localStorage.getItem('preferredLang') || 'en';
     updateLanguage(savedLang);
+}
+
+// Main initialization
+document.addEventListener('DOMContentLoaded', () => {
+    // Load navigation first
+    loadNavigation();
     
-    // Set up language toggle buttons
-    document.querySelectorAll('.lang-toggle button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const lang = btn.getAttribute('data-lang');
-            updateLanguage(lang);
-        });
-    });
+    // Initialize language (will be called again after nav loads)
+    initLanguage();
 });
 
 // ===== Lightbox Functionality =====
@@ -280,8 +343,6 @@ function updateActiveNav() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', updateActiveNav);
-
 // ===== Scroll to Top Button =====
 function createScrollToTopButton() {
     const button = document.createElement('button');
@@ -322,22 +383,6 @@ function createScrollToTopButton() {
 
 document.addEventListener('DOMContentLoaded', createScrollToTopButton);
 
-// ===== Mobile Menu Toggle (for Bootstrap) =====
-// This will work with Bootstrap's collapse functionality
-document.addEventListener('DOMContentLoaded', () => {
-    // Close mobile menu when clicking a link
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-                if (bsCollapse) {
-                    bsCollapse.hide();
-                }
-            }
-        });
-    });
-});
+// Mobile menu close functionality is now handled in initMobileMenuClose()
+// which is called after navigation loads
 
