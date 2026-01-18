@@ -540,6 +540,7 @@ img {
     position: relative;
     margin-bottom: 3rem;
     width: 45%;
+    padding-top: 2rem; /* 为圆形留出空间，避免与内容重叠 */
 }
 
 .timeline-item:nth-child(odd) {
@@ -557,6 +558,7 @@ img {
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     border-left: 4px solid var(--primary-yellow);
+    margin-top: 0.5rem; /* 与圆形保持距离 */
 }
 
 .timeline-item:nth-child(even) .timeline-content {
@@ -567,16 +569,18 @@ img {
 .timeline-content h3 {
     color: var(--primary-blue);
     margin-bottom: 0.5rem;
+    margin-top: 0; /* 确保标题顶部没有额外间距 */
 }
 
 .timeline-content p {
     color: var(--text-light);
+    margin-bottom: 0;
 }
 
 .timeline-dot {
     position: absolute;
     left: 50%;
-    top: 1rem;
+    top: 0.5rem; /* 调整圆形位置，从顶部开始 */
     transform: translateX(-50%);
     width: 20px;
     height: 20px;
