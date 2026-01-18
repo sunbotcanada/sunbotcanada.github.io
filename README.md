@@ -150,7 +150,7 @@ Edit the contact section in `contact.html` to update email, address, or social l
    - Or use a local server:
      ```bash
      # Using Python 3
-     python -m http.server 8000
+     python3 -m http.server 8000
      
      # Using Node.js (http-server)
      npx http-server
