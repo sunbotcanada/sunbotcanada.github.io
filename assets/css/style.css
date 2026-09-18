@@ -868,12 +868,6 @@ img {
     justify-content: center;
 }
 
-.at-a-glance {
-    background-color: var(--white);
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-}
-
 .glance-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1054,27 +1048,6 @@ img {
     color: var(--text-light);
     font-size: 0.95rem;
     line-height: 1.5;
-}
-
-.home-follow-us .contact-info-item {
-    margin-bottom: 1.25rem;
-    text-align: left;
-}
-
-.home-follow-us .contact-info-item h3 {
-    color: var(--primary-blue);
-    font-size: 1.1rem;
-    margin-bottom: 0.35rem;
-}
-
-.home-follow-us .contact-info-item p {
-    margin: 0;
-    color: var(--text-light);
-}
-
-.home-follow-us .contact-info-item a {
-    color: var(--primary-blue);
-    text-decoration: underline;
 }
 
 .faq-toc {
