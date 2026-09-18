@@ -1,0 +1,395 @@
+---
+description: Project-wide development guidelines for this GitHub Pages website
+alwaysApply: true
+---
+
+# Project Guidelines
+
+This repository is a static website hosted with GitHub Pages.
+
+The primary development environment is Cursor on macOS using a MacBook.
+
+The project is primarily built with web technologies such as HTML, CSS, JavaScript, static assets, metadata, and GitHub Pages-compatible files.
+
+Follow these project-specific rules.
+
+## 1. Inspect the existing website before making changes
+
+Before modifying any page or feature:
+
+- inspect the existing directory structure
+- inspect related HTML
+- inspect related CSS
+- inspect related JavaScript
+- inspect navigation
+- inspect shared components or repeated markup
+- inspect existing metadata and structured data
+- inspect existing mobile and responsive behavior
+
+Do not implement a feature in isolation without first understanding how the current website is structured.
+
+## 2. Preserve the existing implementation
+
+If the website already has a working implementation for:
+
+- navigation
+- headers
+- footers
+- cards
+- buttons
+- sections
+- responsive layouts
+- forms
+- FAQ sections
+- SEO metadata
+- structured data
+- analytics
+- reusable CSS classes
+- reusable JavaScript
+
+reuse or extend the existing implementation.
+
+Do not create a second parallel system unless there is a clear reason.
+
+## 3. Do not rebuild working sections from scratch
+
+When updating an existing section, page, or feature:
+
+1. find the current implementation
+2. understand how it works
+3. preserve its useful behavior
+4. modify it directly
+5. verify related pages and references
+
+Do not replace working code with a completely new implementation unless specifically requested.
+
+## 4. Make minimal changes
+
+Prefer targeted changes.
+
+Do not modify unrelated pages or files.
+
+Do not perform large refactors while implementing a small feature unless the refactor is required.
+
+Avoid changing class names, IDs, URLs, file names, folder names, or navigation paths unnecessarily.
+
+## 5. Static hosting compatibility
+
+This website must remain compatible with GitHub Pages.
+
+Do not introduce functionality that requires:
+
+- Node.js server runtime
+- PHP
+- Python server runtime
+- server-side databases
+- private server environment variables
+- custom backend APIs
+- server-side redirects
+
+unless explicitly requested.
+
+Client-side JavaScript and external APIs may be used only when appropriate and compatible with static hosting.
+
+## 6. File paths
+
+Be careful with GitHub Pages paths.
+
+Before changing asset or internal page paths, verify whether the project uses:
+
+- relative paths
+- root-relative paths
+- custom domains
+- repository subpaths
+
+Do not assume `/` always represents the expected deployment root.
+
+Verify links after modifying paths.
+
+## 7. HTML
+
+Prefer semantic HTML.
+
+Use appropriate elements such as:
+
+- header
+- nav
+- main
+- section
+- article
+- footer
+- button
+- a
+- h1-h6
+
+Avoid unnecessary wrapper elements.
+
+Maintain a logical heading hierarchy.
+
+Each page should normally have one clear primary H1.
+
+## 8. CSS
+
+Reuse existing CSS classes and design patterns whenever possible.
+
+Do not introduce duplicate styles when an existing class can be reused.
+
+Avoid excessive inline styles.
+
+Avoid `!important` unless necessary and justified by the current project structure.
+
+Preserve responsive behavior.
+
+When changing layout or spacing, consider:
+
+- desktop
+- tablet
+- mobile
+
+## 9. JavaScript
+
+Use JavaScript only when necessary.
+
+Prefer simple browser-native JavaScript.
+
+Do not add a framework or library for functionality that can be implemented clearly with the existing project structure.
+
+Before adding new JavaScript:
+
+- inspect existing scripts
+- check whether similar behavior already exists
+- reuse existing event handling patterns
+
+Do not create duplicate listeners or duplicate initialization logic.
+
+## 10. Dependencies
+
+Avoid adding dependencies unless they provide clear value.
+
+Do not add a package, framework, CDN library, or build tool for a small feature that can be implemented with existing code.
+
+Keep the project lightweight.
+
+## 11. SEO preservation
+
+Before changing:
+
+- page titles
+- meta descriptions
+- canonical URLs
+- headings
+- visible business information
+- location information
+- FAQ content
+- structured data
+- Open Graph metadata
+- internal links
+
+inspect the existing implementation first.
+
+Do not accidentally remove SEO-relevant content.
+
+When adding new content, write it primarily for users while keeping it clear and machine-readable for search engines and AI systems.
+
+## 12. AI search and answer-engine readability
+
+Important information should exist as visible, crawlable text in the HTML.
+
+Do not hide critical business information only inside:
+
+- images
+- JavaScript-generated UI
+- sliders
+- inaccessible widgets
+
+Important questions should have direct, explicit answers.
+
+Prefer clear language for facts such as:
+
+- what the service is
+- who it is for
+- age groups
+- programs offered
+- location
+- class format
+- pricing
+- trial information
+- contact methods
+- frequently asked questions
+
+Use descriptive headings.
+
+Avoid vague marketing text when a concrete factual answer can be provided.
+
+## 13. Structured data
+
+If structured data already exists, preserve and extend it rather than replacing it unnecessarily.
+
+Structured data must match visible page content.
+
+Do not fabricate:
+
+- reviews
+- ratings
+- addresses
+- prices
+- business claims
+- awards
+- certifications
+
+Do not add schema properties that are not supported by actual website content or reliable project data.
+
+## 14. FAQ implementation
+
+When creating or updating FAQ content:
+
+- make the question explicit
+- provide a direct answer immediately
+- keep answers understandable without additional context
+- avoid keyword stuffing
+- avoid duplicate questions with slightly different wording
+- reuse factual information already present on the site
+- keep FAQ answers consistent with other pages
+
+If FAQ structured data is used, it must correspond to visible FAQ content.
+
+## 15. Accessibility
+
+Preserve or improve accessibility.
+
+When relevant:
+
+- images should have meaningful alt text
+- decorative images should use appropriate empty alt text
+- buttons should be actual buttons when they perform actions
+- links should have understandable labels
+- forms should have labels
+- keyboard interaction should remain functional
+- text should remain readable on mobile
+- interactive elements should have sufficient context
+
+Do not sacrifice accessibility for visual effects.
+
+## 16. Performance
+
+Keep the site lightweight.
+
+Avoid unnecessarily large:
+
+- JavaScript bundles
+- CSS files
+- images
+- fonts
+- third-party scripts
+
+Do not introduce heavy libraries for small UI effects.
+
+Preserve lazy loading and image optimization when already present.
+
+## 17. Mobile-first awareness
+
+Many visitors may use phones.
+
+When modifying a page, check that the change does not create:
+
+- horizontal scrolling
+- overflowing text
+- oversized buttons
+- unreadable text
+- broken navigation
+- overlapping sections
+- excessively large images
+- unusable tap targets
+
+## 18. Code comments
+
+All code comments must be written in English.
+
+Do not add Chinese comments to source code.
+
+Use UTF-8 encoding.
+
+## 19. No emojis in code
+
+Do not use emojis in:
+
+- HTML comments
+- CSS comments
+- JavaScript comments
+- JavaScript logs
+- configuration files
+- technical documentation generated for the repository
+
+Visible website content may only use emojis if explicitly requested.
+
+## 20. Root cause over fallback
+
+If something is broken, investigate the cause first.
+
+Do not automatically add fallback logic.
+
+For example, do not solve:
+
+missing data -> display arbitrary default value
+
+without first determining why the expected data is missing.
+
+Prefer fixing the source condition.
+
+## 21. Avoid unnecessary legacy compatibility
+
+Do not add compatibility code for old implementations, old browsers, deprecated APIs, or abandoned layouts unless there is evidence that the project still requires them.
+
+Prefer keeping the current codebase simple.
+
+## 22. Verify affected references
+
+After changing a page, component, ID, class, or URL, search the repository for references to it.
+
+Check related:
+
+- HTML files
+- CSS selectors
+- JavaScript selectors
+- internal links
+- navigation
+- structured data
+- sitemap
+- robots.txt
+- metadata
+
+Do not assume a file or selector is used in only one location.
+
+## 23. Do not invent project information
+
+Never invent project facts.
+
+If information such as the following is not present in the repository or user instructions, do not guess:
+
+- prices
+- schedules
+- age ranges
+- addresses
+- phone numbers
+- emails
+- reviews
+- ratings
+- class sizes
+- program names
+- business claims
+
+Ask or inspect the repository instead.
+
+## 24. Completion standard
+
+Before considering a requested change complete:
+
+1. verify the requested feature exists
+2. inspect modified files
+3. check for broken references
+4. check for obvious HTML, CSS, or JavaScript errors
+5. verify GitHub Pages compatibility
+6. consider desktop and mobile behavior
+7. verify important SEO or structured-data content was not accidentally removed
+
+Do not report completion before performing reasonable verification.
