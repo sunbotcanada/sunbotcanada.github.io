@@ -1,8 +1,12 @@
 # SunBot Robotics Official Website
 
-Official website for SunBot Robotics, a STEM education institution in Edmonton, Canada, serving students aged 5-15.
+Official website for SunBot Robotics Programming STEAM Education, a STEAM education program in southwest Edmonton, Alberta, serving children ages 6–10 and 9–14.
 
 🌐 **Live Site**: [sunbotcanada.github.io](https://sunbotcanada.github.io)
+
+## ChatGPT / AI search referral note
+
+If Google Analytics (or similar) is added later, ChatGPT Search referrals may appear with `utm_source=chatgpt.com`. No analytics platform is currently configured in this repository.
 
 ## 📋 Project Overview
 

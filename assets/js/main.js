@@ -71,18 +71,20 @@ const translations = {
             home: 'Home',
             about: 'About',
             courses: 'Courses',
+            faq: 'FAQ',
+            guide: 'Parent Guide',
             gallery: 'Gallery',
             fll: 'FLL',
             contact: 'Contact'
         },
         hero: {
-            title: 'Welcome to SunBot Robotics',
-            subtitle: 'Inspiring Young Minds Through STEM Education',
+            title: 'SunBot Robotics Programming STEAM Education',
+            subtitle: 'Hands-on robotics, coding and STEAM classes for children in southwest Edmonton',
             cta: 'Explore Our Courses'
         },
         about: {
-            title: 'About SunBot Robotics',
-            content: 'SunBot Robotics is dedicated to providing high-quality STEM education for children aged 5-15. Our mission is to inspire creativity, foster problem-solving skills, and prepare the next generation of innovators through hands-on robotics and coding programs.'
+            title: 'About SunBot',
+            content: 'SunBot Robotics Programming STEAM Education offers hands-on robotics, coding and STEAM classes for children in southwest Edmonton. Students build, program and test robots while developing engineering, problem-solving, teamwork and presentation skills in small classes of up to six students.'
         },
         courses: {
             title: 'Our Courses',
@@ -92,7 +94,7 @@ const translations = {
             title: 'Student Gallery'
         },
         footer: {
-            copyright: '© 2025 SunBot Robotics | Edmonton, Canada'
+            copyright: '© 2026 SunBot Robotics Programming STEAM Education | Southwest Edmonton, Alberta'
         }
     },
     zh: {
@@ -100,18 +102,20 @@ const translations = {
             home: '首页',
             about: '关于我们',
             courses: '课程',
+            faq: '常见问题',
+            guide: '家长指南',
             gallery: '相册',
             fll: 'FLL竞赛',
             contact: '联系我们'
         },
         hero: {
-            title: '欢迎来到 SunBot Robotics',
-            subtitle: '通过STEM教育激发年轻思维',
+            title: 'SunBot 机器人编程 STEAM 教育',
+            subtitle: '埃德蒙顿西南部儿童机器人、编程与 STEAM 小班课程',
             cta: '探索我们的课程'
         },
         about: {
-            title: '关于 SunBot Robotics',
-            content: 'SunBot Robotics致力于为5-15岁儿童提供高质量的STEM教育。我们的使命是通过实践性的机器人和编程课程，激发创造力，培养解决问题的能力，并为下一代创新者做好准备。'
+            title: '关于 SunBot',
+            content: 'SunBot 机器人编程 STEAM 教育为埃德蒙顿西南部儿童提供动手机器人、编程与 STEAM 课程。学生在最多 6 人的小班中搭建、编程并测试机器人，同时培养工程思维、问题解决、团队合作与表达能力。'
         },
         courses: {
             title: '我们的课程',
@@ -121,7 +125,7 @@ const translations = {
             title: '学生相册'
         },
         footer: {
-            copyright: '© 2025 SunBot Robotics | 加拿大埃德蒙顿'
+            copyright: '© 2026 SunBot 机器人编程 STEAM 教育 | 埃德蒙顿西南部，阿尔伯塔'
         }
     }
 };
@@ -331,13 +335,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ===== Navbar Active State =====
 function updateActiveNav() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const path = window.location.pathname;
+    let currentPage = path.split('/').pop() || 'index.html';
+    if (currentPage === '' || path.endsWith('/')) {
+        currentPage = 'index.html';
+    }
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+        if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
             link.classList.add('active');
         }
     });
