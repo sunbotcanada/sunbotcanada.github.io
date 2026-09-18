@@ -949,9 +949,25 @@ img {
     max-width: 820px;
 }
 
-.content-narrow a {
+.content-narrow a:not(.btn-primary-custom):not(.btn-secondary-custom) {
     color: var(--primary-blue);
     text-decoration: underline;
+}
+
+.content-narrow a.btn-primary-custom {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.content-narrow a.btn-secondary-custom {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.content-narrow a.btn-primary-custom:hover,
+.content-narrow a.btn-secondary-custom:hover {
+    color: var(--white);
+    text-decoration: none;
 }
 
 .local-service p,
