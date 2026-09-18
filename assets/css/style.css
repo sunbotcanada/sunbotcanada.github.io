@@ -868,6 +868,41 @@ img {
     justify-content: center;
 }
 
+.at-a-glance {
+    background-color: var(--white);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.glance-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.glance-item {
+    background: var(--bg-gray);
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid var(--primary-yellow);
+}
+
+.glance-item dt {
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.glance-item dd {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
 .btn-secondary-custom {
     background-color: var(--white);
     color: var(--primary-blue);
@@ -958,6 +993,41 @@ img {
     color: var(--primary-blue);
     font-size: 0.9rem;
     margin-top: 0.5rem;
+}
+
+.course-poster-section {
+    background-color: var(--white);
+}
+
+.course-poster-card {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.course-poster-figure {
+    margin: 0 0 1.5rem;
+}
+
+.course-poster-image {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.course-poster-figure figcaption {
+    margin-top: 1rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.course-poster-actions {
+    justify-content: center;
 }
 
 .faq-toc {
