@@ -8,6 +8,91 @@ Official website for SunBot Robotics Programming STEAM Education, a STEAM educat
 
 If Google Analytics (or similar) is added later, ChatGPT Search referrals may appear with `utm_source=chatgpt.com`. No analytics platform is currently configured in this repository.
 
+## Search engine and AI crawler setup
+
+### Crawler policy
+
+`robots.txt` explicitly allows `OAI-SearchBot` (ChatGPT Search), `Googlebot`, `Bingbot`,
+`Applebot` (Apple Search / Siri / Spotlight) and all other agents, and points to
+`sitemap.xml`. No `GPTBot` rule is defined, so model-training crawling follows the
+default `User-agent: *` rule. Change this only as a deliberate policy decision.
+
+### Structured data
+
+The canonical SunBot entity is defined once, on the homepage, as
+`https://sunbotcanada.github.io/#organization`. Every other page adds a `WebPage` and
+`BreadcrumbList` node that references that same `@id` instead of redefining the
+organization. When editing entity facts, edit the homepage `@graph` only.
+
+`faq.html` builds its `FAQPage` JSON-LD from the visible FAQ markup at runtime
+(`assets/js/faq-schema.js`), so the schema cannot drift from the visible questions.
+
+### Search Console and Bing Webmaster verification
+
+Verification tokens are intentionally absent. Placeholders are marked with `TODO`
+comments in the `<head>` of `index.html`:
+
+- Google: `<meta name="google-site-verification" content="...">`
+- Bing: `<meta name="msvalidate.01" content="...">` or a `BingSiteAuth.xml` file at the site root
+
+Insert the real value from each tool, then commit.
+
+### IndexNow
+
+IndexNow tells Bing, Yandex, Seznam and Naver that URLs changed.
+
+- Public key file: `2755c0b1c44be636c12e0ef6010a75e0.txt` at the site root
+- Submission script: `.github/scripts/indexnow_submit.py`
+- Workflow: `.github/workflows/indexnow.yml`, triggered on pushes to `main` that touch
+  `*.html` or `sitemap.xml`, and available via manual dispatch
+
+The key is public by design because IndexNow requires it to be readable at the site root,
+so it is not stored in GitHub Secrets.
+
+Preview the payload without submitting:
+
+```bash
+python3 .github/scripts/indexnow_submit.py --dry-run
+```
+
+Manual submission alternative, if the workflow is disabled:
+
+```bash
+curl -X POST https://api.indexnow.org/IndexNow \
+  -H "Content-Type: application/json" \
+  -d '{"host":"sunbotcanada.github.io","key":"2755c0b1c44be636c12e0ef6010a75e0","keyLocation":"https://sunbotcanada.github.io/2755c0b1c44be636c12e0ef6010a75e0.txt","urlList":["https://sunbotcanada.github.io/"]}'
+```
+
+### llms.txt
+
+`llms.txt` is an experimental, optional summary of public pages. It is not required by
+OpenAI, Google or any other provider, and it does not affect rankings. The authoritative
+sources remain the HTML pages, `robots.txt` and `sitemap.xml`.
+
+### Moving to a custom domain later
+
+Canonical URLs are currently hard-coded as `https://sunbotcanada.github.io/...` because
+GitHub Pages serves plain static HTML with no templating layer. To migrate to a custom
+domain such as `sunbot.ca`:
+
+1. Add a `CNAME` file at the repository root containing only the new domain.
+2. Configure DNS with the domain provider and set the custom domain in
+   **Settings → Pages**, then enable HTTPS.
+3. Replace `https://sunbotcanada.github.io/` with the new origin in:
+   - `<link rel="canonical">` and `og:url` / `twitter:*` URLs in all `*.html`
+   - the `@id`, `url`, `logo` and `image` values in the homepage JSON-LD `@graph`
+   - the per-page `WebPage` / `BreadcrumbList` `@id` and `item` values
+   - `sitemap.xml`
+   - the `Sitemap:` line in `robots.txt`
+   - `SITE_HOST` in `.github/scripts/indexnow_submit.py`
+   - the URLs in `llms.txt`
+4. Keep the GitHub Pages URL reachable so it redirects to the custom domain, then
+   re-verify the new property in Google Search Console and Bing Webmaster Tools and
+   resubmit the sitemap.
+
+A repository-wide find and replace of the origin string covers steps 3, since the string
+is identical everywhere.
+
 ## 📋 Project Overview
 
 This is a static website built with HTML5, CSS3, and JavaScript, designed to showcase SunBot Robotics' courses, student activities, FLL competition preparation, and contact information. The site features bilingual support (English/Chinese) and is fully responsive for desktop and mobile devices.

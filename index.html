@@ -13,6 +13,22 @@
     <meta property="og:image" content="https://sunbotcanada.github.io/assets/images/gallery/exploregroup.jpg">
     <meta name="author" content="SunBot Robotics Programming STEAM Education">
 
+    <!-- Icons and browser theme. Uses the existing SunBot logo assets already in the repository. -->
+    <link rel="icon" href="assets/icons/sunbot-logo-512.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/icons/sunbot-logo-512.png">
+    <meta name="theme-color" content="#0b3954">
+
+    <!-- Open Graph extras -->
+    <meta property="og:site_name" content="SunBot Robotics Programming STEAM Education">
+    <meta property="og:locale" content="en_CA">
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Robotics &amp; Coding Classes for Kids in Southwest Edmonton | SunBot">
+    <meta name="twitter:description" content="SunBot offers small-group robotics, coding and STEAM classes for children in southwest Edmonton, with hands-on building, programming, engineering challenges, teamwork and project-based learning.">
+    <meta name="twitter:image" content="https://sunbotcanada.github.io/assets/images/gallery/exploregroup.jpg">
+
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -27,36 +43,118 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- TODO: Add the Google Search Console verification meta tag here once the property is created.
+         Example: <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_TOKEN"> -->
+    <!-- TODO: Add the Bing Webmaster Tools verification meta tag here once the site is added.
+         Example: <meta name="msvalidate.01" content="REPLACE_WITH_BING_TOKEN">
+         Alternatively host BingSiteAuth.xml at the site root. -->
+
+    <!-- Primary SunBot entity. The @id is reused by other pages so search engines
+         and AI systems resolve one consistent organization, not one per page. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "SunBot Robotics Programming STEAM Education",
-      "alternateName": [
-        "SunBot",
-        "SunBot Kids Robotics & STEM Education"
-      ],
-      "url": "https://sunbotcanada.github.io/",
-      "logo": "https://sunbotcanada.github.io/assets/icons/icon128x128.PNG",
-      "image": "https://sunbotcanada.github.io/assets/images/gallery/exploregroup.jpg",
-      "description": "SunBot Robotics Programming STEAM Education offers hands-on robotics, coding and STEAM classes for children in southwest Edmonton. Students build, program and test robots while developing engineering, problem-solving, teamwork and presentation skills in small classes of up to six students.",
-      "email": "sunbotcanada@gmail.com",
-      "areaServed": [
+      "@graph": [
         {
-          "@type": "AdministrativeArea",
-          "name": "Southwest Edmonton, Alberta"
+          "@type": "EducationalOrganization",
+          "@id": "https://sunbotcanada.github.io/#organization",
+          "name": "SunBot Robotics Programming STEAM Education",
+          "alternateName": [
+            "SunBot",
+            "SunBot Kids Robotics & STEM Education"
+          ],
+          "url": "https://sunbotcanada.github.io/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://sunbotcanada.github.io/assets/icons/sunbot-logo-512.png",
+            "width": 512,
+            "height": 512
+          },
+          "image": "https://sunbotcanada.github.io/assets/images/gallery/exploregroup.jpg",
+          "description": "SunBot Robotics Programming STEAM Education offers hands-on robotics, coding and STEAM classes for children in southwest Edmonton. Students build, program and test robots while developing engineering, problem-solving, teamwork and presentation skills in small classes of up to six students.",
+          "email": "sunbotcanada@gmail.com",
+          "telephone": "+1-780-608-9501",
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Southwest Edmonton, Alberta, Canada"
+            },
+
+            { "@type": "Place", "name": "Hodgson, Edmonton" },
+            { "@type": "Place", "name": "Riverbend, Edmonton" },
+            { "@type": "Place", "name": "Terwillegar Towne, Edmonton" },
+            { "@type": "Place", "name": "Terwillegar Gardens, Edmonton" },
+            { "@type": "Place", "name": "Magrath Heights, Edmonton" },
+            { "@type": "Place", "name": "Haddow, Edmonton" },
+            { "@type": "Place", "name": "Falconer Heights, Edmonton" },
+            { "@type": "Place", "name": "Rhatigan Ridge, Edmonton" },
+            { "@type": "Place", "name": "Brookview, Edmonton" },
+            { "@type": "Place", "name": "Bulyea Heights, Edmonton" },
+            { "@type": "Place", "name": "Ogilvie Ridge, Edmonton" },
+            { "@type": "Place", "name": "Carter Crest, Edmonton" },
+            { "@type": "Place", "name": "Grandview Heights, Edmonton" },
+
+            { "@type": "Place", "name": "Windermere, Edmonton" },
+            { "@type": "Place", "name": "Ambleside, Edmonton" },
+            { "@type": "Place", "name": "Keswick, Edmonton" },
+            { "@type": "Place", "name": "Langdale, Edmonton" },
+            { "@type": "Place", "name": "Glenridding Heights, Edmonton" },
+            { "@type": "Place", "name": "Glenridding Ravine, Edmonton" },
+
+            { "@type": "Place", "name": "Rutherford, Edmonton" },
+            { "@type": "Place", "name": "Heritage Valley, Edmonton" },
+            { "@type": "Place", "name": "Heritage Valley Town Centre, Edmonton" },
+            { "@type": "Place", "name": "MacTaggart, Edmonton" },
+            { "@type": "Place", "name": "Chappelle, Edmonton" },
+            { "@type": "Place", "name": "Desrochers, Edmonton" },
+            { "@type": "Place", "name": "Allard, Edmonton" },
+            { "@type": "Place", "name": "Cavanagh, Edmonton" },
+            { "@type": "Place", "name": "Paisley, Edmonton" },
+            { "@type": "Place", "name": "Graydon Hill, Edmonton" },
+
+            { "@type": "Place", "name": "Ellerslie, Edmonton" },
+            { "@type": "Place", "name": "Summerside, Edmonton" },
+
+            { "@type": "Place", "name": "Terwillegar Community Recreation Centre, Edmonton" }
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "enrollment and general enquiries",
+              "email": "sunbotcanada@gmail.com",
+              "telephone": "+1-780-608-9501",
+              "availableLanguage": ["en", "zh"]
+            }
+          ],
+          "knowsAbout": [
+            "Robotics education for children",
+            "Computer programming for children",
+            "STEAM education",
+            "LEGO robotics",
+            "LEGO SPIKE",
+            "FIRST LEGO League"
+          ],
+          "sameAs": [
+            "https://www.instagram.com/sunbot_edmonton",
+            "https://www.google.com/maps/place/SunBot+Kids+Robotics+%26+STEM+Education/@53.4595635,-113.5651869,17z/data=!4m8!3m7!1s0x53a01f790499b325:0x2357a479bb51c39c!8m2!3d53.4595635!4d-113.5651869!9m1!1b1!16s%2Fg%2F11ysd4984d"
+          ]
         },
-        { "@type": "Place", "name": "Hodgson" },
-        { "@type": "Place", "name": "Riverbend" },
-        { "@type": "Place", "name": "Terwillegar" },
-        { "@type": "Place", "name": "Magrath" },
-        { "@type": "Place", "name": "Haddow" },
-        { "@type": "Place", "name": "Windermere" },
-        { "@type": "Place", "name": "Ambleside" }
-      ],
-      "sameAs": [
-        "https://www.instagram.com/sunbot_edmonton",
-        "https://www.google.com/maps/search/?api=1&query=SunBot%20Kids%20Robotics%20%26%20STEM%20Education"
+        {
+          "@type": "WebSite",
+          "@id": "https://sunbotcanada.github.io/#website",
+          "url": "https://sunbotcanada.github.io/",
+          "name": "SunBot Robotics Programming STEAM Education",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://sunbotcanada.github.io/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://sunbotcanada.github.io/#webpage",
+          "url": "https://sunbotcanada.github.io/",
+          "name": "Robotics & Coding Classes for Kids in Southwest Edmonton | SunBot",
+          "isPartOf": { "@id": "https://sunbotcanada.github.io/#website" },
+          "about": { "@id": "https://sunbotcanada.github.io/#organization" }
+        }
       ]
     }
     </script>
@@ -180,7 +278,27 @@
             <div class="section-title">
                 <h2 id="local-heading">Robotics Classes in Southwest Edmonton</h2>
             </div>
-            <p>SunBot serves families in southwest Edmonton, Alberta, looking for robotics classes for kids, LEGO robotics / LEGO SPIKE learning, and STEAM activities that combine coding with building. Nearby communities may include Hodgson, Riverbend, Terwillegar, Magrath, Haddow, Windermere, Ambleside and other southwest Edmonton neighbourhoods.</p>
+            <p>SunBot serves families in southwest Edmonton, Alberta, looking for robotics classes for kids, LEGO robotics / LEGO SPIKE learning, and STEAM activities that combine coding with building.</p>
+            <p>Classes run in the Terwillegar area of southwest Edmonton, near Terwillegar Community Recreation Centre. The recreation centre is a nearby landmark for orientation only; classes are not held there. Use the <a href="contact.html">contact page</a> to confirm the exact class location before travelling.</p>
+            <p>Families travel to SunBot from communities across southwest Edmonton:</p>
+            <dl class="glance-list">
+                <div class="glance-item">
+                    <dt>Terwillegar &amp; Riverbend</dt>
+                    <dd>Hodgson, Riverbend, Terwillegar Towne, Terwillegar Gardens, Magrath Heights, Haddow, Falconer Heights, Rhatigan Ridge, Brookview, Bulyea Heights, Ogilvie Ridge, Carter Crest and Grandview Heights</dd>
+                </div>
+                <div class="glance-item">
+                    <dt>Windermere &amp; Keswick</dt>
+                    <dd>Windermere, Ambleside, Keswick, Langdale, Glenridding Heights and Glenridding Ravine</dd>
+                </div>
+                <div class="glance-item">
+                    <dt>Heritage Valley &amp; Rutherford</dt>
+                    <dd>Rutherford, MacTaggart, Heritage Valley, Heritage Valley Town Centre, Chappelle, Desrochers, Allard, Cavanagh, Paisley and Graydon Hill</dd>
+                </div>
+                <div class="glance-item">
+                    <dt>South Edmonton</dt>
+                    <dd>Ellerslie and Summerside</dd>
+                </div>
+            </dl>
             <p>For neighbourhood-specific parent questions, see the <a href="faq.html">parent FAQ</a>. To ask about enrollment or current class location details, use the <a href="contact.html">contact page</a>.</p>
         </div>
     </section>
@@ -232,8 +350,8 @@
             <h2 id="reviews-heading">Parent Reviews on Google</h2>
             <p>SunBot’s Google Business Profile listing appears as <strong>SunBot Kids Robotics &amp; STEM Education</strong>. Read current parent reviews and photos on Google Maps—this site does not republish review text.</p>
             <div class="hero-cta-group" style="justify-content: center;">
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=SunBot%20Kids%20Robotics%20%26%20STEM%20Education" class="btn-primary-custom" target="_blank" rel="noopener noreferrer">Read parent reviews on Google</a>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=SunBot%20Kids%20Robotics%20%26%20STEM%20Education" class="btn-secondary-custom" target="_blank" rel="noopener noreferrer">View SunBot on Google Maps</a>
+                <a href="https://www.google.com/maps/place/SunBot+Kids+Robotics+%26+STEM+Education/@53.4595635,-113.5651869,17z/data=!4m8!3m7!1s0x53a01f790499b325:0x2357a479bb51c39c!8m2!3d53.4595635!4d-113.5651869!9m1!1b1!16s%2Fg%2F11ysd4984d" class="btn-primary-custom" target="_blank" rel="noopener noreferrer">Read parent reviews on Google</a>
+                <a href="contact.html" class="btn-secondary-custom">Contact SunBot</a>
             </div>
         </div>
     </section>
@@ -278,22 +396,49 @@
         </div>
     </section>
 
-    <!-- Social Media Section -->
+    <!-- Contact / Follow Us (aligned with contact.html) -->
     <section class="section" style="background-color: var(--bg-gray);" aria-labelledby="social-heading">
         <div class="container-custom">
             <div class="section-title">
                 <h2 id="social-heading">Follow Us</h2>
                 <p>Stay connected with SunBot</p>
             </div>
-            <div class="text-center">
-                <div class="social-links" style="justify-content: center;">
+            <div class="home-follow-us content-narrow" style="margin: 0 auto;">
+                <div class="contact-info-item">
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p><a href="mailto:sunbotcanada@gmail.com">sunbotcanada@gmail.com</a></p>
+                </div>
+                <div class="contact-info-item">
+                    <h3><i class="fab fa-instagram"></i> Instagram</h3>
+                    <p>
+                        <a href="https://www.instagram.com/sunbot_edmonton" target="_blank" rel="noopener noreferrer">
+                            @sunbot_edmonton
+                        </a>
+                    </p>
+                </div>
+                <div class="contact-info-item">
+                    <h3><i class="fab fa-weixin"></i> WeChat</h3>
+                    <p>ID: <strong>sunbotcanada</strong></p>
+                </div>
+                <div class="contact-info-item">
+                    <h3><i class="fab fa-google"></i> Google Reviews</h3>
+                    <p>
+                        Listing name: <strong>SunBot Kids Robotics &amp; STEM Education</strong><br>
+                        <a href="https://www.google.com/maps/place/SunBot+Kids+Robotics+%26+STEM+Education/@53.4595635,-113.5651869,17z/data=!4m8!3m7!1s0x53a01f790499b325:0x2357a479bb51c39c!8m2!3d53.4595635!4d-113.5651869!9m1!1b1!16s%2Fg%2F11ysd4984d"
+                           target="_blank" rel="noopener noreferrer">
+                            Read parent reviews on Google Maps
+                        </a>
+                    </p>
+                </div>
+                <div class="social-links" style="justify-content: center; margin-top: 1.5rem;">
                     <a href="https://www.instagram.com/sunbot_edmonton" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram @sunbot_edmonton">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a href="mailto:sunbotcanada@gmail.com" class="social-link" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://www.google.com/maps/search/?api=1&amp;query=SunBot%20Kids%20Robotics%20%26%20STEM%20Education" target="_blank" rel="noopener noreferrer" class="social-link" title="Google Maps">
+                    <a href="https://www.google.com/maps/place/SunBot+Kids+Robotics+%26+STEM+Education/@53.4595635,-113.5651869,17z/data=!4m8!3m7!1s0x53a01f790499b325:0x2357a479bb51c39c!8m2!3d53.4595635!4d-113.5651869!9m1!1b1!16s%2Fg%2F11ysd4984d"
+                       target="_blank" rel="noopener noreferrer" class="social-link" title="Google Maps Reviews">
                         <i class="fab fa-google"></i>
                     </a>
                 </div>
@@ -314,7 +459,7 @@
                 <a href="fll.html">FLL</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=SunBot%20Kids%20Robotics%20%26%20STEM%20Education" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+                <a href="https://www.google.com/maps/place/SunBot+Kids+Robotics+%26+STEM+Education/@53.4595635,-113.5651869,17z/data=!4m8!3m7!1s0x53a01f790499b325:0x2357a479bb51c39c!8m2!3d53.4595635!4d-113.5651869!9m1!1b1!16s%2Fg%2F11ysd4984d" target="_blank" rel="noopener noreferrer">Google Reviews</a>
             </nav>
             <p data-i18n="footer.copyright">© 2026 SunBot Robotics Programming STEAM Education | Southwest Edmonton, Alberta</p>
         </div>

@@ -12,6 +12,22 @@
     <meta property="og:url" content="https://sunbotcanada.github.io/gallery.html">
     <meta property="og:image" content="https://sunbotcanada.github.io/assets/images/gallery/exploregroup.jpg">
     <meta name="author" content="SunBot Robotics Programming STEAM Education">
+
+    <!-- Icons and browser theme. Uses the existing SunBot logo assets already in the repository. -->
+    <link rel="icon" href="assets/icons/sunbot-logo-512.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/icons/sunbot-logo-512.png">
+    <meta name="theme-color" content="#0b3954">
+
+    <!-- Open Graph extras -->
+    <meta property="og:site_name" content="SunBot Robotics Programming STEAM Education">
+    <meta property="og:locale" content="en_CA">
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SunBot Student Gallery | Robotics Classes in Edmonton">
+    <meta name="twitter:description" content="Photos from SunBot robotics classes and FLL preparation in Edmonton: building, programming, teamwork and competition moments.">
+    <meta name="twitter:image" content="https://sunbotcanada.github.io/assets/images/gallery/exploregroup.jpg">
+
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +42,51 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Page-level structured data. Reuses the organization @id defined on the homepage. -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sunbotcanada.github.io/gallery.html#webpage",
+      "url": "https://sunbotcanada.github.io/gallery.html",
+      "name": "Student Gallery | SunBot Robotics Classes in Edmonton",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://sunbotcanada.github.io/#website"
+      },
+      "about": {
+        "@id": "https://sunbotcanada.github.io/#organization"
+      },
+      "publisher": {
+        "@id": "https://sunbotcanada.github.io/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://sunbotcanada.github.io/gallery.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sunbotcanada.github.io/gallery.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sunbotcanada.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Gallery",
+          "item": "https://sunbotcanada.github.io/gallery.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
 </head>
 <body>
     <!-- Navigation Placeholder - Loaded dynamically -->
@@ -40,6 +101,15 @@
             <p>Classroom building, programming and FLL preparation at SunBot</p>
         </div>
     </section>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container-custom">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Gallery</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Gallery Grid -->
     <section class="section gallery-section">
@@ -83,6 +153,18 @@
             </div>
         </div>
     </section>
+
+    <!-- Related pages -->
+    <section class="section" aria-labelledby="gallery-next-heading">
+        <div class="container-custom text-center content-narrow">
+            <h2 id="gallery-next-heading">Learn More About SunBot Classes</h2>
+            <p>These photos come from SunBot classes in southwest Edmonton. See what students do in <a href="courses.html">the robotics and coding courses</a>, read the <a href="faq.html">parent robotics FAQ</a>, or browse <a href="parents-guide.html">A Parent's Guide to Robotics Classes for Kids in Edmonton</a>.</p>
+            <div class="hero-cta-group" style="justify-content: center;">
+                <a href="courses.html" class="btn-secondary-custom">View Courses</a>
+                <a href="contact.html" class="btn-primary-custom">Contact SunBot</a>
+            </div>
+        </div>
+    </section>
     </main>
 
     <!-- Footer -->
@@ -97,7 +179,7 @@
                 <a href="fll.html">FLL</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=SunBot%20Kids%20Robotics%20%26%20STEM%20Education" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+                <a href="https://www.google.com/maps/place/SunBot+Kids+Robotics+%26+STEM+Education/@53.4595635,-113.5651869,17z/data=!4m8!3m7!1s0x53a01f790499b325:0x2357a479bb51c39c!8m2!3d53.4595635!4d-113.5651869!9m1!1b1!16s%2Fg%2F11ysd4984d" target="_blank" rel="noopener noreferrer">Google Reviews</a>
             </nav>
             <p>© 2026 SunBot Robotics Programming STEAM Education | Southwest Edmonton, Alberta</p>
         </div>

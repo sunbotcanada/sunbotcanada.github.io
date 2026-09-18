@@ -7,6 +7,9 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+User-agent: Applebot
+Allow: /
+
 User-agent: *
 Allow: /
 

@@ -1,0 +1,49 @@
+# SunBot Robotics Programming STEAM Education
+
+> Small-group robotics, coding and STEAM education for children in southwest Edmonton, Alberta, Canada.
+> Programs are organized for ages 6-10 and 9-14. Classes are capped at six students.
+> In regular class work each student usually has their own robotics kit; for major challenge
+> projects and competitions students work in teams of 2-6.
+
+This file is an experimental, informal summary of public pages. It is not required by any
+search engine or AI provider. The authoritative sources are the HTML pages, robots.txt and
+sitemap.xml.
+
+## Important pages
+
+- [Home](https://sunbotcanada.github.io/): Program overview, "at a glance" facts, southwest Edmonton service area.
+- [Courses](https://sunbotcanada.github.io/courses.html): FLL Explore (ages 6-10) and FLL Challenge (ages 9-14) details, class structure, downloadable course poster.
+- [Parent FAQ](https://sunbotcanada.github.io/faq.html): 70 questions covering starting age, beginners, LEGO SPIKE, robotics vs coding, class size, neighbourhoods and enrollment.
+- [Parent Guide](https://sunbotcanada.github.io/parents-guide.html): Guide to choosing robotics classes for kids in Edmonton.
+- [FLL Challenge](https://sunbotcanada.github.io/fll.html): FIRST LEGO League Challenge preparation.
+- [About](https://sunbotcanada.github.io/about.html): Mission, differentiators, founder.
+- [Gallery](https://sunbotcanada.github.io/gallery.html): Photos from classes and competition preparation.
+- [Contact](https://sunbotcanada.github.io/contact.html): Email, Instagram, WeChat, Google Business Profile listing.
+
+## Learning focus
+
+Hands-on building, programming, engineering challenges, problem solving, teamwork,
+presentations and project-based learning, using LEGO Education robotics kits.
+
+## Service area
+
+Southwest Edmonton, Alberta. Communities served include:
+
+- Terwillegar and Riverbend area: Hodgson, Riverbend, Terwillegar Towne, Terwillegar
+  Gardens, Magrath Heights, Haddow, Falconer Heights, Rhatigan Ridge, Brookview,
+  Bulyea Heights, Ogilvie Ridge, Carter Crest, Grandview Heights
+- Windermere and Keswick area: Windermere, Ambleside, Keswick, Langdale,
+  Glenridding Heights, Glenridding Ravine
+- Heritage Valley and Rutherford area: Rutherford, MacTaggart, Heritage Valley,
+  Heritage Valley Town Centre, Chappelle, Desrochers, Allard, Cavanagh, Paisley,
+  Graydon Hill
+- South Edmonton: Ellerslie, Summerside
+
+## Reviews
+
+Parent reviews are published on the Google Business Profile listing
+"SunBot Kids Robotics & STEM Education". This website does not republish review text.
+
+## Contact
+
+Email: sunbotcanada@gmail.com

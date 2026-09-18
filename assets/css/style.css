@@ -995,6 +995,36 @@ img {
     margin-top: 0.5rem;
 }
 
+.breadcrumbs {
+    background-color: var(--bg-gray);
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs li {
+    color: var(--text-light);
+}
+
+.breadcrumbs li + li::before {
+    content: "/";
+    margin-right: 0.5rem;
+    color: var(--text-light);
+}
+
+.breadcrumbs a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
 .course-poster-section {
     background-color: var(--white);
 }
@@ -1026,8 +1056,25 @@ img {
     line-height: 1.5;
 }
 
-.course-poster-actions {
-    justify-content: center;
+.home-follow-us .contact-info-item {
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.home-follow-us .contact-info-item h3 {
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+}
+
+.home-follow-us .contact-info-item p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+.home-follow-us .contact-info-item a {
+    color: var(--primary-blue);
+    text-decoration: underline;
 }
 
 .faq-toc {
