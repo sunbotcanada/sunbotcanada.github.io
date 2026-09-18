@@ -1,0 +1,26 @@
+# Notify IndexNow (Bing, Yandex, Seznam, Naver) when public pages change.
+# The IndexNow key is public by design: it must be readable at the site root,
+# so it lives in the repository rather than in GitHub Secrets.
+# URLs come from sitemap.xml so there is only one list of canonical URLs.
+name: IndexNow submission
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.html"
+      - "sitemap.xml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Submit canonical URLs to IndexNow
+        run: python3 .github/scripts/indexnow_submit.py
