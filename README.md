@@ -49,6 +49,19 @@ IndexNow tells Bing, Yandex, Seznam and Naver that URLs changed.
 The key is public by design because IndexNow requires it to be readable at the site root,
 so it is not stored in GitHub Secrets.
 
+Required token permissions for this repository, which are easy to overlook:
+
+- `Contents: Read and write` for any push
+- `Workflows: Read and write` to create or change `.github/workflows/indexnow.yml`
+- `Actions: Read and write` only to trigger a run through the REST API; the Run workflow
+  button in the Actions tab needs no token
+
+Without the workflow permission a push is rejected with `refusing to allow a Personal Access
+Token to create or update workflow`, even when the commit is mostly unrelated content. Fix it
+by editing the permissions on the existing token, which leaves the token value unchanged.
+Regenerating issues a new value without adding any permission, so it does not resolve this
+and forces the stored credential to be replaced.
+
 Preview the payload without submitting:
 
 ```bash
