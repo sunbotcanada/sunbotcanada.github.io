@@ -78,13 +78,13 @@ const translations = {
             contact: 'Contact'
         },
         hero: {
-            title: 'SunBot Robotics Programming STEAM Education',
-            subtitle: 'Hands-on robotics, coding and STEAM classes for children in southwest Edmonton',
+            title: 'Welcome to SunBot Robotics',
+            subtitle: 'Inspiring Young Minds Through STEM Education',
             cta: 'Explore Our Courses'
         },
         about: {
-            title: 'About SunBot',
-            content: 'SunBot Robotics Programming STEAM Education offers hands-on robotics, coding and STEAM classes for children in southwest Edmonton. Students build, program and test robots while developing engineering, problem-solving, teamwork and presentation skills in small classes of up to six students.'
+            title: 'About SunBot Robotics',
+            content: 'SunBot Robotics is dedicated to providing high-quality STEM education for children aged 6-14. Our mission is to inspire creativity, foster problem-solving skills, and prepare the next generation of innovators through FIRST® LEGO® League programs.'
         },
         courses: {
             title: 'Our Courses',
@@ -94,7 +94,7 @@ const translations = {
             title: 'Student Gallery'
         },
         footer: {
-            copyright: '© 2026 SunBot Robotics Programming STEAM Education | Southwest Edmonton, Alberta'
+            copyright: '© 2025 SunBot Robotics | Edmonton, Canada'
         }
     },
     zh: {
@@ -109,13 +109,13 @@ const translations = {
             contact: '联系我们'
         },
         hero: {
-            title: 'SunBot 机器人编程 STEAM 教育',
-            subtitle: '埃德蒙顿西南部儿童机器人、编程与 STEAM 小班课程',
+            title: '欢迎来到 SunBot Robotics',
+            subtitle: '通过STEM教育激发年轻思维',
             cta: '探索我们的课程'
         },
         about: {
-            title: '关于 SunBot',
-            content: 'SunBot 机器人编程 STEAM 教育为埃德蒙顿西南部儿童提供动手机器人、编程与 STEAM 课程。学生在最多 6 人的小班中搭建、编程并测试机器人，同时培养工程思维、问题解决、团队合作与表达能力。'
+            title: '关于 SunBot Robotics',
+            content: 'SunBot Robotics致力于为6-14岁儿童提供高质量的STEM教育。我们的使命是通过FIRST® LEGO® League课程，激发创造力，培养解决问题的能力，并为下一代创新者做好准备。'
         },
         courses: {
             title: '我们的课程',
@@ -125,7 +125,7 @@ const translations = {
             title: '学生相册'
         },
         footer: {
-            copyright: '© 2026 SunBot 机器人编程 STEAM 教育 | 埃德蒙顿西南部，阿尔伯塔'
+            copyright: '© 2025 SunBot Robotics | 加拿大埃德蒙顿'
         }
     }
 };

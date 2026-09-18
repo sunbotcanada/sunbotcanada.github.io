@@ -885,39 +885,6 @@ img {
     color: var(--white);
 }
 
-.at-a-glance {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-    margin: 0 0 2rem;
-}
-
-.at-a-glance-item {
-    background: var(--bg-gray);
-    border-left: 4px solid var(--primary-yellow);
-    padding: 1rem 1.25rem;
-}
-
-.at-a-glance-item dt {
-    font-weight: 700;
-    color: var(--primary-blue);
-    margin-bottom: 0.35rem;
-}
-
-.at-a-glance-item dd {
-    margin: 0;
-    color: var(--text-dark);
-}
-
-.entity-summary {
-    font-size: 1.15rem;
-    color: var(--text-dark);
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.7;
-}
-
 .why-list {
     list-style: none;
     display: grid;
@@ -1058,10 +1025,5 @@ img {
     .hero-cta-group .btn-primary-custom,
     .hero-cta-group .btn-secondary-custom {
         text-align: center;
-    }
-
-    .entity-summary {
-        text-align: left;
-        font-size: 1.05rem;
     }
 }
