@@ -35,7 +35,9 @@ Materials and LEGO Education kits are provided in class.
 
 - Best starting age: around 6-7 for introductory robotics, if the child can follow building
   steps with guidance. SunBot accepts children from age 6.
-- Prior experience: not required for either program.
+- Prior experience: not required. Ages 6-10 (FLL Explore) start with icon drag-and-drop
+  on WeDo or SPIKE Essential. Ages 9-14 (FLL Challenge) start with Scratch-based blocks
+  on SPIKE Prime or EV3. Classes capped at six students.
 - Robotics or coding first: for children under about 10, robotics generally makes
   programming concepts concrete faster because feedback is physical.
 - Explore vs Challenge: Explore is an introductory, showcase-based division for ages 6-10.
@@ -43,15 +45,16 @@ Materials and LEGO Education kits are provided in class.
   an innovation project and Core Values.
 - Teenagers: SunBot teaches up to age 14. Students 15 and older should look at senior FIRST
   programs or high-school robotics clubs.
-- Trial classes and camps: no trial policy or camp schedule is published on the website.
-  Contact SunBot to ask what is currently available.
-- Enrollment: email sunbotcanada@gmail.com or use the contact form, including the child's age.
+- Trial classes: yes. Book by emailing sunbotcanada@gmail.com or texting +1 780 655 0833
+  with the child's age. No camp schedule is published on the website; ask directly.
+- Enrollment: email sunbotcanada@gmail.com, text +1 780 655 0833, or use the contact form,
+  including the child's age.
 
 ## Important pages
 
 - [Home](https://sunbotcanada.github.io/): Program overview, quick answers for parents, course preview.
 - [Courses](https://sunbotcanada.github.io/courses.html): FLL Explore and FLL Challenge details, program comparison table, course selection questions, downloadable course poster.
-- [Parent FAQ](https://sunbotcanada.github.io/faq.html): 80 questions covering starting age, beginners, LEGO SPIKE, robotics vs coding, programming platforms, class size, neighbourhoods, FLL teams and enrollment.
+- [Parent FAQ](https://sunbotcanada.github.io/faq.html): 81 questions covering starting age, beginners, LEGO SPIKE, robotics vs coding, programming platforms, class size, neighbourhoods, FLL teams and enrollment.
 - [Parent Guide](https://sunbotcanada.github.io/parents-guide.html): How to choose a robotics program in Edmonton, coding vs robotics comparison, age-stage table, questions to ask before enrolling.
 - [FLL](https://sunbotcanada.github.io/fll.html): FIRST LEGO League divisions explained, Explore vs Challenge, competition journey.
 - [About](https://sunbotcanada.github.io/about.html): Mission, differentiators, founder, southwest Edmonton identity and service area.
@@ -65,9 +68,9 @@ presentations and project-based learning, using LEGO Education robotics kits.
 
 ## Location
 
-Classes run in the Terwillegar area of southwest Edmonton, near Terwillegar Community
-Recreation Centre. Classes are not held at the recreation centre; it is a nearby landmark
-only. No street address is published; parents confirm the exact location when enquiring.
+Street address: 157 Hayward CR NW, Edmonton, AB T6R 3G2, Canada
+Terwillegar area of southwest Edmonton, near Terwillegar Community Recreation Centre.
+The recreation centre is a nearby landmark only; classes are held at the Hayward CR address.
 
 ## Service area
 
@@ -91,5 +94,7 @@ Parent reviews are published on the Google Business Profile listing
 ## Contact
 
 Email: sunbotcanada@gmail.com
+Text / SMS: +1 780 655 0833
 WeChat ID: sunbotcanada
 Instagram: https://www.instagram.com/sunbot_edmonton
+Address: 157 Hayward CR NW, Edmonton, AB T6R 3G2

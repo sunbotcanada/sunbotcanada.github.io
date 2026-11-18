@@ -137,7 +137,7 @@ def check_internal_links(pages):
     for page in pages:
         text = page.read_text(encoding="utf-8")
         for ref in re.findall(r'(?:href|src)="([^"]+)"', text):
-            if ref.startswith(("http", "mailto:", "tel:", "#", "data:")):
+            if ref.startswith(("http", "mailto:", "tel:", "sms:", "#", "data:")):
                 continue
             target = ref.split("#")[0].split("?")[0]
             if target and not (REPO / target).exists():
