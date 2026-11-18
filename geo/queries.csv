@@ -1,0 +1,15 @@
+id,category,query,intent,priority
+L01,Location,What are the best robotics or coding classes for kids in Southwest Edmonton?,local recommendation,high
+L02,Location,Where can my child learn LEGO robotics near Terwillegar or Windermere?,neighbourhood proximity,high
+L03,Location,What are good after-school STEM activities in Edmonton?,activity discovery,medium
+L04,Location,Coding and robotics programs for teenagers in Edmonton,age range upper bound,medium
+A01,Age and readiness,What is the best age for a child to start learning robotics or coding?,readiness,high
+A02,Age and readiness,Are there robotics classes for 6-year-olds in Edmonton?,young beginner,high
+A03,Age and readiness,Does my child need previous coding experience to join a robotics class?,prerequisite anxiety,high
+A04,Age and readiness,Should my child start with coding or robotics first?,program choice,medium
+C01,Curriculum and competition,What is FIRST LEGO League and how can my child join a team in Edmonton?,competition entry,high
+C02,Curriculum and competition,What is the difference between FLL Explore and FLL Challenge?,division comparison,high
+C03,Curriculum and competition,What programming languages or platforms do kids learn in robotics classes?,technical depth,medium
+F01,Format and logistics,Are there small-group robotics classes for kids in Edmonton?,class size,high
+F02,Format and logistics,How do I choose a good STEM or robotics program for my child?,decision criteria,medium
+F03,Format and logistics,Do robotics programs in Edmonton offer trial classes or camps?,trial and camps,medium

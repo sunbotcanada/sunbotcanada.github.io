@@ -1,7 +1,8 @@
 # SunBot Robotics Programming STEAM Education
 
-> Small-group robotics, coding and STEAM education for children in southwest Edmonton, Alberta, Canada.
-> Programs are organized for ages 6-10 and 9-14. Classes are capped at six students.
+> Robotics and coding education for children in Edmonton, Alberta, Canada.
+> Classes run in the Terwillegar area of southwest Edmonton.
+> Programs are organized for ages 6-10 and 9-14. SunBot's general model caps classes at six students.
 > In regular class work each student usually has their own robotics kit; for major challenge
 > projects and competitions students work in teams of 2-6.
 
@@ -9,21 +10,64 @@ This file is an experimental, informal summary of public pages. It is not requir
 search engine or AI provider. The authoritative sources are the HTML pages, robots.txt and
 sitemap.xml.
 
+## Identity
+
+- Website name: SunBot Robotics Programming STEAM Education
+- Google Business Profile and Google Maps listing: SunBot Kids Robotics & STEM Education
+- Short brand name: SunBot
+- Founder and lead instructor: Adam Sun
+- Public profiles: Google Maps, Instagram (@sunbot_edmonton), Nextdoor
+
+## Programs
+
+- FLL Explore, ages 6-10. Beginner. No prior experience required. LEGO Education WeDo or
+  SPIKE Essential, programmed with drag-and-drop icon blocks. Guided building, simple
+  programs, teamwork, and a local showcase presentation. Maximum 6 students.
+- FLL Challenge, ages 9-14. Intermediate to advanced, beginners accepted. LEGO SPIKE Prime
+  or MINDSTORMS EV3, programmed with Scratch-based block coding; the platform also supports
+  Python. Autonomous robot missions, innovation project, Core Values, and registration for
+  local and regional FIRST LEGO League Challenge events. Maximum 6 students.
+
+Pricing listed on course pages: CAD $40 per hour. Promotions are handled by inquiry.
+Materials and LEGO Education kits are provided in class.
+
+## Key answers for common parent questions
+
+- Best starting age: around 6-7 for introductory robotics, if the child can follow building
+  steps with guidance. SunBot accepts children from age 6.
+- Prior experience: not required for either program.
+- Robotics or coding first: for children under about 10, robotics generally makes
+  programming concepts concrete faster because feedback is physical.
+- Explore vs Challenge: Explore is an introductory, showcase-based division for ages 6-10.
+  Challenge is a judged competition division for ages 9-14 with autonomous robot missions,
+  an innovation project and Core Values.
+- Teenagers: SunBot teaches up to age 14. Students 15 and older should look at senior FIRST
+  programs or high-school robotics clubs.
+- Trial classes and camps: no trial policy or camp schedule is published on the website.
+  Contact SunBot to ask what is currently available.
+- Enrollment: email sunbotcanada@gmail.com or use the contact form, including the child's age.
+
 ## Important pages
 
-- [Home](https://sunbotcanada.github.io/): Program overview, "at a glance" facts, southwest Edmonton service area.
-- [Courses](https://sunbotcanada.github.io/courses.html): FLL Explore (ages 6-10) and FLL Challenge (ages 9-14) details, class structure, downloadable course poster.
-- [Parent FAQ](https://sunbotcanada.github.io/faq.html): 70 questions covering starting age, beginners, LEGO SPIKE, robotics vs coding, class size, neighbourhoods and enrollment.
-- [Parent Guide](https://sunbotcanada.github.io/parents-guide.html): Guide to choosing robotics classes for kids in Edmonton.
-- [FLL Challenge](https://sunbotcanada.github.io/fll.html): FIRST LEGO League Challenge preparation.
-- [About](https://sunbotcanada.github.io/about.html): Mission, differentiators, founder.
+- [Home](https://sunbotcanada.github.io/): Program overview, quick answers for parents, course preview.
+- [Courses](https://sunbotcanada.github.io/courses.html): FLL Explore and FLL Challenge details, program comparison table, course selection questions, downloadable course poster.
+- [Parent FAQ](https://sunbotcanada.github.io/faq.html): 80 questions covering starting age, beginners, LEGO SPIKE, robotics vs coding, programming platforms, class size, neighbourhoods, FLL teams and enrollment.
+- [Parent Guide](https://sunbotcanada.github.io/parents-guide.html): How to choose a robotics program in Edmonton, coding vs robotics comparison, age-stage table, questions to ask before enrolling.
+- [FLL](https://sunbotcanada.github.io/fll.html): FIRST LEGO League divisions explained, Explore vs Challenge, competition journey.
+- [About](https://sunbotcanada.github.io/about.html): Mission, differentiators, founder, southwest Edmonton identity and service area.
 - [Gallery](https://sunbotcanada.github.io/gallery.html): Photos from classes and competition preparation.
-- [Contact](https://sunbotcanada.github.io/contact.html): Email, Instagram, WeChat, Google Business Profile listing.
+- [Contact](https://sunbotcanada.github.io/contact.html): Email, Instagram, WeChat, Google Business Profile listing, communities served.
 
 ## Learning focus
 
 Hands-on building, programming, engineering challenges, problem solving, teamwork,
 presentations and project-based learning, using LEGO Education robotics kits.
+
+## Location
+
+Classes run in the Terwillegar area of southwest Edmonton, near Terwillegar Community
+Recreation Centre. Classes are not held at the recreation centre; it is a nearby landmark
+only. No street address is published; parents confirm the exact location when enquiring.
 
 ## Service area
 
@@ -47,3 +91,5 @@ Parent reviews are published on the Google Business Profile listing
 ## Contact
 
 Email: sunbotcanada@gmail.com
+WeChat ID: sunbotcanada
+Instagram: https://www.instagram.com/sunbot_edmonton

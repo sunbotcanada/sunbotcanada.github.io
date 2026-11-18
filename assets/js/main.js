@@ -84,7 +84,7 @@ const translations = {
         },
         about: {
             title: 'About SunBot',
-            content: 'SunBot Robotics Programming STEAM Education offers hands-on robotics, coding and STEAM classes for children in southwest Edmonton. Students build, program and test robots while developing engineering, problem-solving, teamwork and presentation skills in small classes of up to six students.'
+            content: 'SunBot Robotics Programming STEAM Education offers hands-on robotics and coding classes for children in Edmonton, Alberta, Canada. Classes run in the Terwillegar area of southwest Edmonton, serving families from Riverbend, Windermere, Heritage Valley and nearby communities. Students build, program and test robots in small classes of up to six students, developing engineering, problem-solving, teamwork and presentation skills.'
         },
         courses: {
             title: 'Our Courses',
@@ -115,7 +115,7 @@ const translations = {
         },
         about: {
             title: '关于 SunBot',
-            content: 'SunBot Robotics Programming STEAM Education 为埃德蒙顿西南部儿童提供动手式机器人、编程与STEAM课程。学生在最多六人的小班中搭建、编程并测试机器人，同时培养工程思维、解决问题、团队合作与表达能力。'
+            content: 'SunBot Robotics Programming STEAM Education 为加拿大阿尔伯塔省埃德蒙顿的儿童提供动手式机器人与编程课程。课程设在埃德蒙顿西南部 Terwillegar 一带，服务 Riverbend、Windermere、Heritage Valley 及周边社区的家庭。学生在最多六人的小班中搭建、编程并测试机器人，培养工程思维、解决问题、团队合作与表达能力。'
         },
         courses: {
             title: '我们的课程',
@@ -297,6 +297,7 @@ function handleContactForm(event) {
 Name: ${data.name}
 Email: ${data.email}
 Interested Course: ${data.course || 'General Inquiry'}
+Heard About SunBot Via: ${data.referral || 'Not specified'}
 
 Message:
 ${data.message}

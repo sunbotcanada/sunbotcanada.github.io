@@ -1,5 +1,9 @@
-User-agent: OAI-SearchBot
-Allow: /
+# SunBot Robotics Programming STEAM Education
+# Everything public is crawlable. HTML, CSS, JS and images are all allowed so that
+# search engines and AI assistants can render and understand the pages.
+
+# --- Search and AI retrieval crawlers -------------------------------------
+# These fetch pages to answer user queries and to build search indexes.
 
 User-agent: Googlebot
 Allow: /
@@ -9,6 +13,37 @@ Allow: /
 
 User-agent: Applebot
 Allow: /
+
+# OpenAI: search index and user-initiated fetches (ChatGPT Search)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity: search index and user-initiated fetches
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic: search index and user-initiated fetches (Claude)
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# --- Model training crawlers ----------------------------------------------
+# These are distinct from the retrieval crawlers above and are not required for
+# appearing in AI answers. They inherit the wildcard rule below, which allows them.
+# To opt out of training use later, add explicit Disallow blocks here for
+# GPTBot, ClaudeBot, Google-Extended, Applebot-Extended and CCBot.
+
+# --- Everything else ------------------------------------------------------
+# Microsoft Copilot retrieves through Bingbot. Grok and other assistants that do
+# not publish a stable user-agent token are covered by this wildcard.
 
 User-agent: *
 Allow: /
